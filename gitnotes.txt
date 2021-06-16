@@ -1,0 +1,99 @@
+section 1: introduction to git and git hub
+
+git : git is distributed version control system, git has its own file structure. Git tracks every file and store the history of file.
+
+github: github is a repository hoisting service. that hosts all the git repos on the cloud, to make collaborators to work on same project.
+
+seciton 2: Installation of git :
+dont need to watch the video
+
+section 3: basic git commands:
+
+mkdir: to make directories
+cd: to change the directories.
+ls: to list out all the files.
+ls -al: to list out all hidden files.
+pwd: print working directory
+start . : to open file in file explorer
+explorer .: to open files in file explorer
+touch: to create new file
+nano : to edit the file
+cat : to print the content of the file
+echo: to print the print 
+rm : to remove the files.
+rm -rf: to remove the folders
+>: to attach the files.
+>> : to append the content of the file.
+--helP : to get helP
+.: alias of current directory
+..: alias of parent directory
+clear: to clear the terminal
+tab: to complete auto command
+
+section 4: how git works under the hood.
+
+In git we have 4 types of objects.
+
+1. blob
+2. tree
+3. commit
+4. Annotated Tags
+
+
+
+basic git commands:
+git hash-object 
+git cat-file -p <hash>
+git mktree
+
+git read-tree <hash>
+git checkout-index -a
+git ls-files -s
+
+
+
+basic examples:
+echo "hell world" | git hash-object --stdin -w
+
+git cat-file -p <hash>
+
+nano temptree.txt
+100644 blob <hash>  <filename>
+100644 blob <hash>  <filenamee>
+
+cat temptree.txt | git mktree
+
+git read-tree <hash>
+
+git ls-files -s
+
+git checkout-index -a
+
+section 5: Basic Git operations
+
+commit:
+to make commit: to we need to set username and email
+
+
+git config --global user.name "pshadikbasha"
+git config --global user.email "pshadikbasha97@gmail.com"
+
+git config --global --list
+
+
+basic git operation:
+
+git add . : to add files from working directory to staging area or index area
+git commit -m : to add files from staging area to .git repository.
+git log: to list out all the commit log
+git status: to checkout the status
+git checkout: to checkout to specific branch
+
+git rm --cached <filename> to remove file from staging area to working directory..
+
+End of folder 5.
+
+
+
+
+
